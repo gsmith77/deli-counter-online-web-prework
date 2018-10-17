@@ -10,16 +10,15 @@ def line(array)
   end
 end
 
-def take_a_number(array)
-  puts @@test
-  ticket = array.size + 1
-  array << ticket
-  @@ticker=1
-  new_array=[]
-  new_array << @@ticker
-  puts "Welcome, You are ticket number #{ticker} and you are number #{array.size} in line."
-  @@ticker +=1
- end
+ @@ticket_number = 1
+
+  def take_a_number(array) 
+    puts @@test
+    array << @@ticket_number
+    puts "Welcome, You are ticket number #{@@ticket_number} and you are number #{array.size} in line."
+    @@ticket_number += 1
+  end
+end
 def now_serving(array)
   if array.size >= 1
     puts "Currently serving #{array[0]}."
