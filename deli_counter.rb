@@ -1,3 +1,6 @@
+class Deli
+  #class variable
+  @@test = "hello"
 def line(array)
   new_array = []
   if array.length == 0
@@ -7,16 +10,24 @@ def line(array)
   end
 end
 
-def take_a_number(array,string)
-  array << string
-  puts "Welcome, #{array[-1]}. You are number #{array.size} in line."
-end
-
+def take_a_number(array)
+  puts @@test
+  ticket = array.size + 1
+  array << ticket
+  new_array=[]
+ new_array << ticket
+  puts "Welcome, You are ticket number #{new_array.length} and you are number #{array.size} in line."
+ end
 def now_serving(array)
-  if array.size > 1
+  if array.size >= 1
     puts "Currently serving #{array[0]}."
      array.shift
   else array.size == 0
     puts"There is nobody waiting to be served!"
   end
 end
+end
+deli = Deli.new
+line = [] 
+deli.take_a_number(line)
+deli.take_a_number(line)
