@@ -15,7 +15,9 @@ def take_a_number(array)
   ticket = array.size + 1
   array << ticket
   new_array=[]
- new_array << ticket
+  ticker = 0
+  ticker +=1
+ new_array << ticker
   puts "Welcome, You are ticket number #{new_array.length} and you are number #{array.size} in line."
  end
 def now_serving(array)
