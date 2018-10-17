@@ -14,7 +14,7 @@ def take_a_number(array)
   puts @@test
   ticket = array.size + 1
   array << ticket
- ticker= 0
+  @@ticker=1
  ticker +=1
   puts "Welcome, You are ticket number #{ticker} and you are number #{array.size} in line."
  end
