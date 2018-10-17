@@ -18,7 +18,7 @@ end
     puts "Welcome, You are ticket number #{@@ticket_number} and you are number #{array.size} in line."
     @@ticket_number += 1
   end
-end
+  
 def now_serving(array)
   if array.size >= 1
     puts "Currently serving #{array[0]}."
