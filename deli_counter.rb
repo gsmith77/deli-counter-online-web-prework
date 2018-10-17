@@ -14,11 +14,9 @@ def take_a_number(array)
   puts @@test
   ticket = array.size + 1
   array << ticket
-  new_array=[]
-  ticker = 0
-  ticker +=1
- new_array << ticker
-  puts "Welcome, You are ticket number #{new_array.length} and you are number #{array.size} in line."
+ ticker= 0
+ ticker +=1
+  puts "Welcome, You are ticket number #{ticker} and you are number #{array.size} in line."
  end
 def now_serving(array)
   if array.size >= 1
